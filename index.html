@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mjamaa Bank — Demo Bank</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav-bar" class="nav-bar">
+        <div class="left">
+            <h1><a href="https://mjamaa-bank.vercel.app" target="_blank">Mjamaa <span>Bank</span></a></h1>
+            <p>We grow together</p>
+        </div>
+
+        <button type="button" class="hamburger" id="hamburger" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="right">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-link">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!--Hero Slideshow-->
+    <section class="landing-hero" aria-label="Hero slideshow">
+        <div class="slide slide-1 active">
+            <div class="slide-content">
+                <h2>Your Money, Your Future</h2>
+                <p>We are here to guide you every step of the way. We offer real solutions tailored to your goals, with friendly experts you can trust to help you make the right financial decisions from personal savings accounts to flexible home and business loans.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <div class="slide slide-2">
+            <div class="slide-content">
+                <h2>Talent deserves a chance</h2>
+                <p>At Mjamaa bank, we seek out and sponsor gifted boys and girls with a passion for football, providing training support, equipment, and exposure to competitive platforms. Every child with talent deserves the opportunity to grow, regardless of their background or where they come from.</p>
+                <a href="#">Click to Apply</a>
+            </div>
+        </div>
+
+        <div class="slide slide-3">
+            <div class="slide-content">
+                <h2>Mjamaa Scholarship</h2>
+                <p>We offer full and partial scholarships for driven students ready to take their education beyond borders. From application support to tuition funding, we walk with you through the entire process of securing a place at a top institution anywhere in the world.</p>
+                <a href="#">Click to Apply</a>
+            </div>
+        </div>
+
+        <button class="arrow prev" aria-label="Previous slide"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAr0lEQVR4nO3YPQrCQBRF4VPYGC1egq5QcBWCywoKFrH0p9ANRdJIEGPru8M9MMWUH2+Kx4Bzzjmn1xrYUADiCfTAjgIQvSpmBTw+EMM5ATNEqoHbF8QZWCJSbUSSjMiEuKojwogkhRFJihIQDXCf2J0qhCZxUZ9EUZAhY9QwXWmYBWKFMWKYIzBHrDAmacaoYQ6KmGZi7W+Vvkx/TWaPaDHCyCLGz2z7vjnnnHP8txekQawL3cptqgAAAABJRU5ErkJggg==" alt="less-than"></button>
+        <button class="arrow next" aria-label="Next slide"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVR4nO3WSQrCUBBF0fv3Itj8zQQUN2aH6wvYbEEHSsCASDKVepV3oRZwqBoUOOecc3FqgAXirYEHcAcq4ojXZ26qmPMXop8LMEesAhwHMN1mVohVjAmMORgTsMlgliTBXFUxe2MClg5zGsC0wAxBzG5kM5UkJ1YR/8ekTmtsE0b8OyOiZESUjIiSEVEqGRBkQXRtgac64hcjjejbZEA455ybXm96MqucBMUiIwAAAABJRU5ErkJggg==" alt="more-than"></button>
+
+        <div class="dots" role="tablist">
+            <button class="dot active" aria-label="Slide 1"></button>
+            <button class="dot" aria-label="Slide 2"></button>
+            <button class="dot" aria-label="Slide 3"></button>
+        </div>
+
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
