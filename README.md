@@ -1,16 +1,24 @@
-<h1>Mjamaa Bank — Official Website (Still Under construction)</h1>
+# 🏦 Mjamaa Bank — Official Website
 
 > **"We grow together"** — A modern, fully responsive bank website built with pure HTML, CSS, and JavaScript. No frameworks. No libraries. Just clean, handcrafted code.
 
+---
+
+## 📸 Previews
+
+![Mjamaa Bank Hero](https://i.ibb.co/Rp9p3KFK/Screenshot-2026-09-13-081845.png)
+
 ![Mjamaa Bank Hero](https://i.ibb.co/PsmWm3VQ/Screenshot-2026-09-12-134809.png)
 
---
+![Mjamaa Bank Hero](https://i.ibb.co/4ZZ4X7kN/Screenshot-2026-09-13-082106.png)
+
+---
 
 ## 🌐 Live Demo
 
-🔗 [mjamaabank.vercel.app](https://mjamaabank.vercel.app)
+🔗 [mjamaa-bank.vercel.app](https://mjamaa-bank.vercel.app)
 
---
+---
 
 ## 📁 Project Structure
 
@@ -30,7 +38,8 @@ mjamaa-bank/
 - ├── LANDING-HERO-KIDS.png
 - └── LANDING-HERO-GRADUATE.png
 
---
+
+---
 
 ## ✨ Features
 
@@ -150,8 +159,6 @@ Each slide targets a specific audience:
 
 A fixed bar below the navigation showing live KES exchange rates:
 
-● USD/KES — Buy: 129.50 Sell: 130.20 ● GBP/KES — Buy: 164.30 ...
-
 
 - Powered entirely by CSS `@keyframes` animation
 - Duplicated content ensures seamless infinite loop
@@ -237,7 +244,7 @@ This project is licensed under the **MIT License** — feel free to use it as a 
 ## 👤 Author
 
 **Evra**
-- GitHub: [@Vyronevra-dev](https://github.com/Vyronevra-dev)
+- GitHub: [@yourusername](https://github.com/Vyronevra-dev)
 - Website: [mjamaabank.vercel.app](https://mjamaabank.vercel.app)
 
 ---
