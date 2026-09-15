@@ -3,6 +3,10 @@ const hamburger = document.getElementById('hamburger');
 const right = document.querySelector('.right');
 const mobileLink = document.querySelector('.mobile-link');
 const overlay = document.querySelector('.overlay');
+const deals = document.querySelectorAll('.deal');
+const dealBtns = document.querySelectorAll('.deal-btn');
+
+
 
 hamburger.addEventListener('click', () => {
     mobileLink.classList.toggle('open');
@@ -62,3 +66,23 @@ document.addEventListener('keydown', e => {
 });
 
 startAutoplay();
+
+// Button Filter
+dealBtns.forEach((dealBtn) => {
+    dealBtn.addEventListener('click', () => {
+        const filter = dealBtn.dataset.filter;
+
+        dealBtns.forEach(btn => btn.classList.remove('active'));
+        dealBtn.classList.add('active');
+
+        deals.forEach((deal) => {
+            if (filter === 'all' || deal.dataset.category === filter) {
+                deal.style.display = 'block';
+                setTimeout(() => deal.classList.remove('hide'), 10);
+            } else {
+                deal.classList.add('hide');
+                setTimeout(() => deal.style.display = 'none', 300);
+            }
+        });
+    });
+});

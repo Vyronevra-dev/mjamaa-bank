@@ -12,7 +12,7 @@
     --light-text-primary: #1A1A1A;
     --light-text-secondary: #6C757D;
     --light-btn-primary: #16A34A;
-    --light-btn-primay-hover: #15803D;
+    --light-btn-primary-hover: #15803D;
     --light-btn-secondary: #16A34A;
     --light-links: #16A34A;
     --light-links-hover: #1E3A8A;
@@ -33,6 +33,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -360,6 +361,7 @@ body {
     text-decoration: none;
     transition: background 0.2s, color 0.2s;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 .slide-content a:hover {
@@ -475,6 +477,8 @@ body {
 .services h2 {
     font-family: 'DM Sans', sans-serif;
     text-align: center;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .wants {
@@ -537,5 +541,278 @@ body {
 
     .want {
         width: 100%;
+    }
+}
+
+.learn {
+    margin: 100px 0 0;
+    padding: 0 50px;
+}
+
+.learn h2 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.learn hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 20px;
+}
+
+.learn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.learn-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--light-card);
+    border-bottom: 5px solid var(--light-success);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.learn-card:hover {
+    transform: translateY(-3px);
+}
+
+.learn-card div:first-child {
+    padding: 5px 5px 0;
+}
+
+.learn-card div:first-child img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.learn-card div:last-child {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.learn-card div:last-child h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.learn-card div:last-child p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.learn-card div:last-child a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .learn {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .learn {
+        margin: 50px 0 0;
+        padding: 0 30px;
+    }
+
+    .learn-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .learn {
+        padding: 0 20px;
+    }
+
+    .learn-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.deals {
+    margin: 100px 0 0;
+    padding: 0 50px 0;
+}
+
+.deals h2 {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.deals hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 50px;   
+}
+
+.deals-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 50px;
+}
+
+.deal-btn {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 2px solid rgba(22, 163, 74, 0.3);
+    background-color: var(--light-card);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.deal-btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--light-btn-primary);
+    color: #FFF;
+    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.35);
+}
+
+.deal-btn.active {
+    border: none;
+    background-color: var(--light-btn-primary);
+    color: #FFF;
+    box-shadow: 0 4px 15px rgba(22, 163, 74, 0.35);
+}
+
+.deal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+}
+
+.deal {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: var(--light-card);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.deal.hide {
+    display: none;
+}
+
+.deal div:first-child {
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.deal div:first-child img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.deal:hover div:first-child img {
+    transform: scale(1.1);
+}
+
+.deal div:last-child {
+    padding: 10px 15px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.deal div:last-child h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.deal div:last-child p {
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.deal div:last-child svg {
+    display: inline-block;
+}
+
+.deal div:last-child a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 950px) {
+    .deals {
+        margin: 50px 0 0;
+        padding: 0 20px;
+    }
+
+    .deals-btns {
+        border-radius: 20px;
+        background-color: #FFF;
+        box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        overflow-x: auto;
+        gap: 30px;
+        padding: 10px 50px;
+        justify-content: space-around;  
+        flex-wrap: nowrap;
+        padding-bottom: 10px;  
+    }
+
+    .deal-btn {
+        padding: 15px 25px;
+        border-radius: 50px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .deal-container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .deal-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .deal-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .deals-btns {
+        padding: 10px 20px;
     }
 }
