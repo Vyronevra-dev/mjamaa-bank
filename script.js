@@ -7,7 +7,6 @@ const deals = document.querySelectorAll('.deal');
 const dealBtns = document.querySelectorAll('.deal-btn');
 
 
-
 hamburger.addEventListener('click', () => {
     mobileLink.classList.toggle('open');
     overlay.classList.toggle('open');
