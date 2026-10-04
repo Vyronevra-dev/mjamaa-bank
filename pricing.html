@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mjamaa Bank — Pricing</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
     <nav id="nav-bar" class="nav-bar">
         <div class="left">
-            <h1><a href="https://mjamaa-bank.vercel.app" target="_blank">Mjamaa <span>Bank</span></a></h1>
+            <h1>
+                <a href="https://mjamaa-bank.vercel.app" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>
+                    <span>Mjamaa</span> Bank
+                </a>
+            </h1>
             <p>We grow together</p>
         </div>
 
@@ -62,7 +78,597 @@
 
     <div class="overlay"></div>
 
-    
+    <!-- Hero -->
+    <section class="about-hero pricing-hero" aria-label="Pricing hero">
+        <div class="pricing-hero-content">
+            <h2>Transparent Pricing You Can Trust</h2>
+            <p>At Mjamaa Bank, we believe that knowing the cost of your banking services should never be a mystery. Our pricing is designed to be fair, straightforward, and fully disclosed so you always know exactly what you are paying for. Whether you are opening your first savings account, applying for a home loan, or upgrading to a premium card, our transparent fee structure ensures there are no surprises along the way.</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="pricing-intro">
+        <h2>Our Pricing Philosophy</h2>
+        <hr>
+
+        <p>Mjamaa Bank charges fees only where required by regulation or where a service involves a clear cost to deliver. We publish our full tariff schedule annually and notify customers of any changes at least 30 days in advance. Account holders on higher-tier packages enjoy progressive benefits including reduced or waived fees on most transactions. All fees are inclusive of applicable taxes unless stated otherwise, and the most up-to-date prices are always available in our mobile app, online banking portal, and at any branch.</p>
+    </section>
+
+    <!-- Account Pricing Cards -->
+    <section class="pricing-cards">
+        <h2>Account Packages</h2>
+        <hr>
+
+        <p class="section-subtitle">Choose the account that fits your needs and enjoy progressively more benefits as you grow your relationship with us.</p>
+
+        <div class="pricing-grid">
+
+            <!-- Basic -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>M-Pesa Linked</h3>
+                    <p class="pricing-card-desc">Our entry-level digital-first account, perfect for everyday transactions and mobile money integration.</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <span class="price-amount">KES 0</span>
+                    <span class="price-label">per month</span>
+                </div>
+
+                <div class="balance-req"><strong>Minimum opening balance:</strong> KES 100</div>
+
+                <div class="pricing-card-body">
+                    <ul class="pricing-card-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free M-Pesa send and receive
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free mobile banking app access
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            1 free ATM withdrawal per month
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free peer-to-peer transfers within Mjamaa
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-cta">
+                    <a href="contact.html">Open This Account</a>
+                </div>
+            </div>
+
+            <!-- Popular / Plus -->
+            <div class="pricing-card popular">
+                <div class="pricing-card-header">
+                    <h3>Plus Package</h3>
+                    <p class="pricing-card-desc">Our most popular mid-tier account with enhanced benefits, priority support, and waived fees.</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <span class="price-amount">KES 150</span>
+                    <span class="price-label">per month</span>
+                </div>
+
+                <div class="balance-req"><strong>Minimum balance:</strong> KES 5,000</div>
+
+                <div class="pricing-card-body">
+                    <ul class="pricing-card-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            All M-Pesa Linked features, plus
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Unlimited free ATM withdrawals
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free local and international wire transfers
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Interest earned on daily balance
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority customer service line
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free cheque book (25 leaves per order)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-cta">
+                    <a href="contact.html">Get Started</a>
+                </div>
+            </div>
+
+            <!-- Premium -->
+            <div class="pricing-card">
+                <div class="pricing-card-header">
+                    <h3>Premium</h3>
+                    <p class="pricing-card-desc">Our elite package for high-net-worth clients with full-service benefits, dedicated relationship managers, and exclusive perks.</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <span class="price-amount">KES 500</span>
+                    <span class="price-label">per month</span>
+                </div>
+
+                <div class="balance-req"><strong>Minimum balance:</strong> KES 50,000</div>
+
+                <div class="pricing-card-body">
+                    <ul class="pricing-card-features">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            All Plus Package features, plus
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Dedicated relationship manager
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Free international currency exchange
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Complimentary airport lounge access
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Annual financial planning consultation
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Priority loan processing and approval
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Waived fees on all services
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-cta">
+                    <a href="contact.html">Apply for Premium</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Service Fees Table -->
+    <section class="fee-table-section">
+        <h2>Service Fees Overview</h2>
+        <hr>
+
+        <p class="section-subtitle">Below is a summary of our most common service fees. Full tariff schedules are available for download in our mobile app and online banking portal.</p>
+
+        <div class="fee-table-wrapper">
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Service Category</th>
+                        <th>Service Description</th>
+                        <th>M-Pesa Linked</th>
+                        <th>Plus Package</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fee-note-row">
+                        <td colspan="5"><strong>Account Keeping</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Monthly Management Fee</td>
+                        <td class="fee-detail">Active account maintenance charge</td>
+                        <td class="fee-amount">KES 0</td>
+                        <td class="fee-amount">KES 150</td>
+                        <td class="fee-amount">KES 500</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Inactivity Fee</td>
+                        <td class="fee-detail">Charged after 12 months of no transactions</td>
+                        <td class="fee-amount">KES 100</td>
+                        <td class="fee-amount">KES 0</td>
+                        <td class="fee-amount">KES 0</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Account Statement</td>
+                        <td class="fee-detail">Paper statement (per page)</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+
+                    <tr class="fee-note-row">
+                        <td colspan="5"><strong>Cash Transactions</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Cash Deposit</td>
+                        <td class="fee-detail">At branch or agent, per KES 10,000 deposited</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">KES 25</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Cash Withdrawal (Branch)</td>
+                        <td class="fee-detail"> Per KES 50,000 withdrawn</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">KES 25</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">ATM Withdrawal</td>
+                        <td class="fee-detail">Per transaction at any Kenyan ATM</td>
+                        <td class="fee-amount">KES 30</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+
+                    <tr class="fee-note-row">
+                        <td colspan="5"><strong>Digital Transfers</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Peer to Peer (P2P)</td>
+                        <td class="fee-detail">Transfer to another Mjamaa account</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Local Bank Transfer</td>
+                        <td class="fee-detail">To another commercial bank in Kenya</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">KES 25</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Interbank RTGS</td>
+                        <td class="fee-detail">Real-time gross settlement, per transaction</td>
+                        <td class="fee-amount">KES 2,500</td>
+                        <td class="fee-amount">KES 2,000</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">International Wire Transfer</td>
+                        <td class="fee-detail">Remittance to an overseas account</td>
+                        <td class="fee-amount">KES 3,500</td>
+                        <td class="fee-amount">KES 2,500</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+
+                    <tr class="fee-note-row">
+                        <td colspan="5"><strong>Cheque Services</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Cheque Book</td>
+                        <td class="fee-detail">25-leaf cheque book</td>
+                        <td class="fee-amount">KES 150</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Cheque Deposit (Branch)</td>
+                        <td class="fee-detail">Per cheque deposited over the counter</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">KES 25</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Stop Payment</td>
+                        <td class="fee-detail">Request to stop a cheque from clearing</td>
+                        <td class="fee-amount">KES 500</td>
+                        <td class="fee-amount">KES 500</td>
+                        <td class="fee-amount">KES 500</td>
+                    </tr>
+
+                    <tr class="fee-note-row">
+                        <td colspan="5"><strong>Over-the-Counter Services</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Balance Inquiry (Branch)</td>
+                        <td class="fee-detail"> Per inquiry at any branch</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">KES 50</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                    <tr>
+                        <td class="fee-category">Account Opening</td>
+                        <td class="fee-detail">New account setup fee</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                        <td class="fee-amount">Free</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Loan Rates -->
+    <section class="loan-rates">
+        <h2>Loan Interest Rates</h2>
+        <hr>
+
+        <p class="section-subtitle">Our loan pricing is competitive and transparent. Rates are expressed as annual percentage rates (APR) and are determined by your credit profile, loan amount, and repayment term. The ranges below reflect what most qualified borrowers can expect to receive.</p>
+
+        <div class="loan-grid">
+
+            <div class="rate-card">
+                <h3>Personal Loan</h3>
+                <div class="rate-value">12% - 18% p.a.</div>
+                <p class="rate-detail">Unsecured personal financing for debt consolidation, medical expenses, or major purchases. Terms from 6 months to 5 years. Processing fee of up to 2% of the principal amount.</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Salary Loan</h3>
+                <div class="rate-value">10% - 15% p.a.</div>
+                <p class="rate-detail">Fast approval for salaried individuals with direct deposit. Interest calculated on a reducing balance basis. Terms from 3 months to 3 years.</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Home Loan</h3>
+                <div class="rate-value">10% - 14% p.a.</div>
+                <p class="rate-detail">Competitive financing for property purchase, construction, or refinancing. Terms of up to 25 years with flexible repayment options. Legal and valuation fees apply.</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Car Loan</h3>
+                <div class="rate-value">11% - 16% p.a.</div>
+                <p class="rate-detail">Finance for new or used vehicle purchases from licensed dealers. Terms from 12 months to 7 years. Requires comprehensive insurance coverage.</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Business Loan</h3>
+                <div class="rate-value">13% - 19% p.a.</div>
+                <p class="rate-detail">Working capital and expansion financing for registered businesses. Terms from 6 months to 5 years. Requires business financial statements and security documentation.</p>
+            </div>
+
+            <div class="rate-card">
+                <h3>Education Loan</h3>
+                <div class="rate-value">11% - 17% p.a.</div>
+                <p class="rate-detail">Funding for tuition fees, books, and accommodation at recognized institutions. Terms aligned with the academic calendar with a six-month grace period after graduation.</p>
+            </div>
+
+        </div>
+
+        <div style="max-width: 800px; margin: 40px auto 0; text-align: center;">
+            <p style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--light-text-secondary); line-height: 1.7;">
+                All loan rates are subject to change based on market conditions and individual eligibility. Final rates are communicated during the application process after a credit assessment. Late payment fees of up to 5% of the outstanding amount may apply.
+            </p>
+        </div>
+    </section>
+
+    <!-- Card Fees -->
+    <section class="card-fees-section">
+        <h2>Card Fees</h2>
+        <hr>
+
+        <p class="section-subtitle">From everyday debit cards to premium credit cards with exclusive rewards, we offer a range of options with transparent annual fees and benefits.</p>
+
+        <div class="card-fees-grid">
+
+            <div class="card-fee-card">
+                <div class="card-fee-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12c0-1.896.628-3.67 1.69-5.095A9.45 9.45 0 0 1 8.5 3.5a9.5 9.5 0 0 1 7 2.94A9.5 9.5 0 0 1 21.5 12c0 1.27-.21 2.49-.6 3.62a.75.75 0 0 1-.4.48l-3.2 2.4a.75.75 0 0 1-.92-.03l-.5-.37a.75.75 0 0 1-.28-.65v-5.13a.75.75 0 0 0-.75-.75H9a.75.75 0 0 0 0 1.5h3.37l2.42 1.7.96-.72a2.25 2.25 0 0 0 .25-.22v-4.54c-.18-.07-.38-.14-.56-.27-.9.54-1.9.88-3 .98A6.5 6.5 0 1 1 11 7.5a6.4 6.4 0 0 1 5.89-3.92 8 8 0 0 0-.17-.08 8.02 8.02 0 0 0-6.78-1.65L8 2.51a.75.75 0 0 0-1 .7v5.5a.75.75 0 0 0 1.5 0V7l.06.32A6.48 6.48 0 0 1 17.5 12c0 .77-.1 1.39-.22 1.88a.75.75 0 0 0 .45.53l2.45 1.15a.75.75 0 0 0 .94-.4c.3-.57.55-1.2.7-1.89A9.4 9.4 0 0 0 21.5 12a9.5 9.5 0 0 0-9-9.46 9.5 9.5 0 0 0-9 9.46 9.4 9.4 0 0 0 2.77 6.6l-.02.02a.75.75 0 0 0 0 1.06l1.41 1.41a.75.75 0 0 0 1.06 0l2.24-2.24a.75.75 0 0 0 0-1.06l-.01-.01a6.5 6.5 0 0 1 0-9.19z"/></svg>
+                </div>
+                <h3>Mjamaa EasyCard</h3>
+                <div class="card-fee-amount">KES 0</div>
+                <p class="card-fee-desc">Our standard debit card included free with every account. Perfect for everyday purchases, ATM withdrawals, and online transactions. No annual fee, no hidden charges.</p>
+            </div>
+
+            <div class="card-fee-card">
+                <div class="card-fee-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v7.186a2 2 0 0 0 .586 1.414l3.727 3.727a.75.75 0 0 0 1.014-.015 1.79 1.79 0 0 1 2.342 0l3.727-3.727.41-.41a.75.75 0 0 0-.816-1.197l-.41.41a.75.75 0 0 0 0 1.014z"/><path d="M9 12.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                </div>
+                <h3>Mjamaa PlusCard</h3>
+                <div class="card-fee-amount">KES 1,500</div>
+                <p class="card-fee-desc">Our premium debit card with enhanced rewards, higher transaction limits, and exclusive merchant discounts. Earn 2 reward points on every KES 100 spent. Available to Plus Package and Premium account holders.</p>
+            </div>
+
+            <div class="card-fee-card">
+                <div class="card-fee-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h8z"/><path d="M16 2V6a2 2 0 0 1-2 2H4"/><path d="M8 8l7 7-4 4-7-7v-4l4-2z"/></svg>
+                </div>
+                <h3>Mjamaa CreditCard</h3>
+                <div class="card-fee-amount">KES 2,500</div>
+                <p class="card-fee-desc">Our signature credit card with cashback rewards, travel insurance, and purchase protection. Interest-free period of up to 45 days on local purchases. Minimum income requirement of KES 30,000 per month.</p>
+            </div>
+
+        </div>
+
+        <div style="max-width: 800px; margin: 40px auto 0; text-align: center;">
+            <p style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--light-text-secondary); line-height: 1.7;">
+                Card replacement fee is KES 500 for debit cards and KES 1,000 for credit cards. Cash advance fees are 3% of the amount withdrawn, with a minimum charge of KES 500. Late payment fees on credit cards are up to 2% of the outstanding balance or KES 1,000, whichever is greater.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <hr>
+
+        <p class="section-subtitle">Quick answers to the most common questions about our pricing, fees, and account features.</p>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+                <div class="faq-question">Can I switch between account packages at any time?</div>
+                <div class="faq-answer">
+                    <p>Yes. You can upgrade or downgrade your account package at any time through our mobile app, online banking portal, or by visiting any branch. If you downgrade to a lower-tier package, the change takes effect at the start of the next billing cycle. Any fees already charged for the current month are non-refundable. If you are upgrading, your new benefits take effect immediately and the new monthly fee will be charged from your next statement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I know which fees apply to my account?</div>
+                <div class="faq-answer">
+                    <p>Your monthly account statement shows a detailed breakdown of all fees charged during the statement period. You can also view your personalized fee summary in the Fees section of our mobile app or online banking. For a complete list of all fees, you can download the full Mjamaa Bank Tariff Schedule PDF, which is updated annually and available on our website, in all our branches, and within your account dashboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Are there any hidden fees not listed here?</div>
+                <div class="faq-answer">
+                    <p>Absolutely not. Mjamaa Bank operates on a policy of full fee transparency. Every fee or charge that applies to your account will appear on your monthly statement with a clear description. We provide regulatory notices at least 30 days before introducing or changing any fee, and you will receive an email notification as well. If you see a charge on your statement that you do not recognize, contact our customer service team immediately and we will investigate it for you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What happens if my balance falls below the minimum?</div>
+                <div class="faq-answer">
+                    <p>If your account balance falls below the minimum required for your package, you will receive a notification via SMS and in the mobile app 7 days before the fee is applied. You then have a grace period of 7 days to bring your balance above the minimum. If your balance remains below the threshold after the grace period, the monthly management fee for your package will be charged, and your account may be reviewed for a package downgrade to better suit your balance level. We are always happy to discuss switching you to a more cost-effective package.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer discounts for students or seniors?</div>
+                <div class="faq-answer">
+                    <p>Yes. Students enrolled at recognized Kenyan universities can apply for our Student Banking package, which waives the monthly management fee and includes a free debit card with reduced ATM limits. Seniors aged 65 and above receive a 50% discount on most service fees, including ATM withdrawals, transfers, and account maintenance. To qualify, you simply need to provide valid identification and proof of age or enrolment. These discounts are available across all our digital and branch channels once your status has been verified and documented in your account profile.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How are loan interest rates determined?</div>
+                <div class="faq-answer">
+                    <p>Loan interest rates are determined by a combination of factors including your credit score, income level, employment history, loan amount, repayment term, and the type of loan you are applying for. We use a risk-based pricing model, which means that borrowers with stronger credit profiles receive lower rates. All applicants receive a personalized rate quote during the application process after a soft credit check, which does not affect your credit score. The final rate is locked in once your loan is approved and the agreement is signed.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I avoid loan processing fees?</div>
+                <div class="faq-answer">
+                    <p>Premium account holders enjoy waived processing fees on all loan products, including personal loans, car loans, and business financing. For other customers, processing fees range from 1% to 2% of the principal amount depending on the loan type. These fees are disclosed upfront in your loan application and are included in your total cost of borrowing. You will never be charged a processing fee that was not clearly communicated to you before you signed your loan agreement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is your policy on fee refunds?</div>
+                <div class="faq-answer">
+                    <p>If you are charged a fee in error, or if a service you were charged for was not delivered as promised, you are entitled to a full refund. To request a refund, contact our customer service team within 30 days of the charge appearing on your statement. If your refund request is approved, the amount will be credited back to your account within 5 business days. For recurring fees such as monthly management charges, refunds are processed as account credits that reduce your next statement balance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Transparency -->
+    <section class="transparency-section">
+        <h2>Our Commitment to Transparency</h2>
+        <hr>
+
+        <div class="transparency-content">
+            <p>Mjamaa Bank is committed to making our pricing clear and accessible to every customer. We publish our complete tariff schedule annually, and any changes to fees are communicated to customers at least 30 days in advance through SMS, email, and notices posted in our mobile app and online banking portal.</p>
+
+            <p>We also maintain a dedicated fee calculator tool, available for free in our mobile app and on our website, that allows you to estimate the cost of any transaction or service before you initiate it. If you ever notice a charge on your statement that does not match your understanding of our fees, our customer service team is ready to investigate and resolve the matter promptly.</p>
+
+            <ul class="transparency-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    All fees are inclusive of applicable taxes unless stated otherwise. Exchange rates and spreads are updated daily and are available in real time through our digital channels.
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Customers are notified of any fee changes through at least two channels: SMS to the registered mobile number and a push notification in the Mjamaa mobile app.
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    The complete Mjamaa Bank Tariff Schedule (Form CBK 22) is available for download as a PDF from our website, at every branch location, and within the Resources section of your online account.
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Regulatory fees imposed by the Central Bank of Kenya or the Kenya Deposit Insurance Fund are passed through to customers without additional markup. We do not add administrative surcharges to these mandated charges.
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    Premium account holders receive personalized fee summaries and proactive alerts when approaching any threshold that would trigger a fee on their account.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="pricing-cta">
+        <h2>Ready to Choose Your Account?</h2>
+        <p>Open your account in minutes with our fully digital onboarding process, or visit any of our 45 branches nationwide for personalized assistance from our banking advisors.</p>
+
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary-cta">Start Application Online</a>
+            <a href="contact.html" class="btn-secondary-cta">Find a Branch</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark"><path d="M10 18v-7"/><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M3 22h18"/><path d="M6 18v-7"/></svg>
+                    Mjamaa <span>Bank</span>
+                </div>
+                <p>We grow together</p>
+                <div class="footer-contact">
+                    <p><strong>Call us:</strong> +254 700 000 000</p>
+                    <p><strong>Email:</strong> support@mjamaabank.co.ke</p>
+                    <p><strong>Address:</strong> P.O. Box 12345-00100, Nairobi, Kenya</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Popular Services</h4>
+                <ul>
+                    <li><a href="#">Open Account</a></li>
+                    <li><a href="#">International Money Transfer</a></li>
+                    <li><a href="#">Ways of Banking</a></li>
+                    <li><a href="#">Our Tariffs</a></li>
+                    <li><a href="#">Currency Exchange</a></li>
+                    <li><a href="#">Mjamaa Scholarship</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal & Support</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Financial Reporting</a></li>
+                    <li><a href="#">Complaints</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a4 4 0 0 0-4 4v4H7v4h4v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.3-2.2 3.7a6.2 6.2 0 0 1-1.6 1.1 5.6 5.6 0 0 1-1.6.3c0 .2.02.4.07.6C16.4 8.1 12.4 7.8 7 5.9 7 5.9 7 5.9 7 5.9c-.3-.3-.6-.7-.8-1.1a6.3 6.3 0 0 0-1.2 1A6.3 6.3 0 0 0 9.4 6c-.3 0-.6.1-.8.2 0 0-2-.6-3.3-2.2-1.5 1.7-1.2 4.3-.6 6.1.6 1.6 1.8 3 3.3 3.8a5.8 5.8 0 0 1-2.1.3c-.3 0-.7.1-1-.2.4 1.2 1.2 2.3 2.3 3.1a6.3 6.3 0 0 0 2.8 1.1c-1.6.5-3.3.7-5 .5A5.6 5.6 0 0 0 7 18.5c1.6 1.6 3.8 2.4 6.1 2.4 2.8 0 5.4-1.4 6.9-3.5 1.4-1.6 2.2-3.8 2.2-6v-.8a5.9 5.9 0 0 0 1.4-1.5z"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7H8v-7a6 6 0 1 1 6-6z"/><path d="M12 3a6 6 0 1 0 0 12 6 6 6 0 0 0 0-12z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></a>
+            </div>
+            <p class="footer-copyright">
+                &copy; 2026 Mjamaa Bank Ltd. Regulated by the Central Bank of Kenya.
+                | Banking License No. BL/001/2024
+            </p>
+        </div>
+    </footer>
 
 <script src="script.js"></script>
 </body>
