@@ -3220,15 +3220,16 @@ body {
     }
 }
 
-/* ===== Login ===== */
+/* ===== Login page: paste at the very bottom of styles.css ===== */
+/* If you already pasted login-extra.css, delete that block first. This file replaces it. */
 
-/* Login Hero */
+/* Hero */
 .login-hero {
     position: relative;
     width: 100%;
-    height: 55vh;
-    min-height: 340px;
-    margin-top: 60px;
+    height: 50vh;
+    min-height: 320px;
+    margin-top: 96px; /* clears the fixed nav (60px) and ticker (36px) */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3258,16 +3259,10 @@ body {
     opacity: 0.9;
 }
 
-@media (max-width: 576px) {
-    .login-hero {
-        margin-top: 90px;
-    }
-}
-
-/* Login Form */
+/* Section */
 .login-section {
-    margin: 100px 0 0;
-    padding: 0 50px;
+    margin: 80px 0 0;
+    padding: 0 50px 60px;
     background-color: var(--light-background);
 }
 
@@ -3284,6 +3279,7 @@ body {
     margin: 5px auto 40px;
 }
 
+/* Card */
 .login-container {
     max-width: 480px;
     margin: 0 auto;
@@ -3344,6 +3340,84 @@ body {
     box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
 }
 
+/* Password field + eye button */
+.password-wrap {
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 52px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--light-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.toggle-password:hover {
+    color: var(--light-btn-primary);
+    background-color: rgba(22, 163, 74, 0.08);
+}
+
+.toggle-password svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Errors + alert */
+.login-form input.invalid {
+    border-color: var(--light-danger);
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.field-error {
+    display: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--light-danger);
+}
+
+.field-error.show {
+    display: block;
+}
+
+.form-alert {
+    display: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--light-btn-primary-hover);
+    border: 1px solid rgba(22, 163, 74, 0.25);
+}
+
+.form-alert.show {
+    display: block;
+}
+
+.form-alert.error {
+    background-color: rgba(220, 38, 38, 0.08);
+    color: var(--light-danger);
+    border-color: rgba(220, 38, 38, 0.25);
+}
+
+/* Options row */
 .login-options {
     display: flex;
     justify-content: space-between;
@@ -3362,6 +3436,13 @@ body {
     cursor: pointer;
 }
 
+.login-options input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    accent-color: var(--light-btn-primary);
+}
+
 .login-options a {
     color: var(--light-links);
     text-decoration: none;
@@ -3373,6 +3454,7 @@ body {
     color: var(--light-btn-primary);
 }
 
+/* Submit */
 .login-submit button {
     width: 100%;
     padding: 16px 32px;
@@ -3392,6 +3474,13 @@ body {
     transform: translateY(-2px);
 }
 
+.login-submit button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Divider + footer link */
 .login-divider {
     display: flex;
     align-items: center;
@@ -3413,41 +3502,6 @@ body {
     padding: 0 20px;
 }
 
-.login-social {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-.login-social button {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px 20px;
-    border: 1px solid rgba(22, 163, 74, 0.2);
-    border-radius: 8px;
-    background-color: #FFF;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--light-text-primary);
-    cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-}
-
-.login-social button:hover {
-    background-color: var(--light-background);
-    border-color: rgba(22, 163, 74, 0.3);
-    transform: translateY(-2px);
-}
-
-.login-social svg {
-    width: 18px;
-    height: 18px;
-}
-
 .login-footer {
     text-align: center;
     font-family: 'DM Sans', sans-serif;
@@ -3467,13 +3521,64 @@ body {
     color: var(--light-btn-primary);
 }
 
+/* Focus rings */
+.login-form input:focus-visible,
+.login-submit button:focus-visible,
+.toggle-password:focus-visible {
+    outline: 2px solid var(--light-btn-primary);
+    outline-offset: 2px;
+}
+
+/* Encryption note + safety text */
+.secure-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--light-text-secondary);
+    margin-top: 25px;
+}
+
+.secure-note svg {
+    width: 16px;
+    height: 16px;
+    color: var(--light-success);
+    flex-shrink: 0;
+}
+
+.security-tips {
+    max-width: 480px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.security-tips p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--light-text-secondary);
+}
+
+.security-tips strong {
+    color: var(--light-text-primary);
+}
+
+/* Responsive */
+@media (max-width: 750px) {
+    .login-hero {
+        margin-top: 134px; /* nav + ticker are taller on mobile */
+    }
+}
+
 @media (max-width: 600px) {
     .login-section {
-        padding: 0 20px;
+        margin-top: 50px;
+        padding: 0 20px 50px;
     }
 
     .login-container {
-        margin: 0;
         padding: 40px 25px;
     }
 }
