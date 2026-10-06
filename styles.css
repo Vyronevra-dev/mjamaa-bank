@@ -3220,3 +3220,615 @@ body {
         margin-top: 60px;
     }
 }
+
+/* ===== Careers ===== */
+
+/* Careers Hero */
+.careers-hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    min-height: 380px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/LANDING-HERO-GRADUATE.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.careers-hero-content h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    color: #FFF;
+}
+
+.careers-hero-content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+@media (max-width: 576px) {
+    .careers-hero {
+        margin-top: 90px;
+    }
+}
+
+/* Why Join */
+.why-join {
+    margin: 100px 0 0;
+    padding: 0 50px;
+    background-color: var(--light-background);
+    text-align: center;
+}
+
+.why-join h2,
+.why-join hr,
+.why-join .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.why-join hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 20px;
+}
+
+.why-join .section-subtitle {
+    font-size: 15px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 50px;
+}
+
+.why-join-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.why-join-card {
+    background-color: var(--light-card);
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(22, 163, 74, 0.08);
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-top: 5px solid var(--light-success);
+}
+
+.why-join-card .why-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: var(--light-success);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-join-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--light-text-primary);
+}
+
+.why-join-card p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+@media (max-width: 750px) {
+    .why-join {
+        padding: 0 20px;
+    }
+
+    .why-join-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Benefits */
+.benefits {
+    margin: 100px 0 0;
+    padding: 0 50px;
+    background-color: var(--light-card);
+}
+
+.benefits h2,
+.benefits hr {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.benefits hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: var(--light-background);
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(22, 163, 74, 0.08);
+    padding: 30px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.benefit-card .benefit-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--light-success);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.benefit-card .benefit-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.benefit-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--light-text-primary);
+}
+
+.benefit-card p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+}
+
+@media (max-width: 750px) {
+    .benefits {
+        padding: 0 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Openings */
+.openings {
+    margin: 100px 0 0;
+    padding: 0 50px;
+    background-color: var(--light-background);
+}
+
+.openings h2,
+.openings hr,
+.openings .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.openings hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 20px;
+}
+
+.openings .section-subtitle {
+    font-size: 15px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.job-card {
+    background-color: var(--light-card);
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(22, 163, 74, 0.08);
+    border-left: 5px solid var(--light-success);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: rgba(22, 163, 74, 0.2);
+}
+
+.job-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.job-card-header h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--light-text-primary);
+    margin: 0;
+}
+
+.job-card .job-location {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--light-success);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.job-card .job-type {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: rgba(34, 197, 94, 0.1);
+    color: var(--light-success);
+}
+
+.job-card .job-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.job-card .job-link {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: var(--light-links);
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    align-self: flex-start;
+}
+
+.job-card:hover .job-link {
+    color: var(--light-btn-primary);
+    border-color: var(--light-success);
+}
+
+@media (max-width: 750px) {
+    .openings {
+        padding: 0 20px;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Apply CTA */
+.careers-cta {
+    margin: 100px 0 0;
+    padding: 60px 50px;
+    background: linear-gradient(135deg, var(--light-success), var(--light-btn-primary));
+    text-align: center;
+    color: #FFF;
+}
+
+.careers-cta h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.careers-cta p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto 30px;
+}
+
+.careers-cta .cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.careers-cta .cta-buttons a {
+    display: inline-block;
+    padding: 14px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.careers-cta .btn-primary-cta {
+    background-color: #FFF;
+    color: var(--light-btn-primary);
+}
+
+.careers-cta .btn-primary-cta:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.careers-cta .btn-secondary-cta {
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-color: #FFF;
+}
+
+.careers-cta .btn-secondary-cta:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    .careers-cta {
+        padding: 40px 20px;
+    }
+
+    .careers-cta .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== Careers Additions ===== */
+
+/* Life at Mjamaa */
+.culture {
+    margin: 100px 0 0;
+    padding: 0 50px;
+    background-color: var(--light-card);
+}
+
+.culture h2,
+.culture hr,
+.culture .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.culture hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 20px;
+}
+
+.culture .section-subtitle {
+    font-size: 15px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.culture-card {
+    background-color: var(--light-background);
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(22, 163, 74, 0.08);
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-top: 5px solid var(--light-success);
+}
+
+.culture-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: var(--light-success);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culture-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.culture-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--light-text-primary);
+}
+
+.culture-card p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    flex: 1;
+}
+
+@media (max-width: 750px) {
+    .culture {
+        padding: 0 20px;
+    }
+
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Testimonials */
+.testimonials {
+    margin: 100px 0 0;
+    padding: 0 50px;
+    background-color: var(--light-background);
+    text-align: center;
+}
+
+.testimonials h2,
+.testimonials hr,
+.testimonials .section-subtitle {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.testimonials hr {
+    border: 1.5px solid var(--light-success);
+    width: 60px;
+    margin: 5px auto 20px;
+}
+
+.testimonials .section-subtitle {
+    font-size: 15px;
+    color: var(--light-text-secondary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--light-card);
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(22, 163, 74, 0.08);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testimonial-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--light-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+}
+
+.testimonial-author .author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--light-success);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.testimonial-author .author-img svg {
+    width: 24px;
+    height: 24px;
+}
+
+.author-info h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light-text-primary);
+    margin-bottom: 2px;
+}
+
+.author-info p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--light-text-secondary);
+}
+
+@media (max-width: 750px) {
+    .testimonials {
+        padding: 0 20px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
