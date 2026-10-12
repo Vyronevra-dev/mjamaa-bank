@@ -28,7 +28,6 @@ mjamaa-bank/
 - ├── about-us.html # About Us page
 - ├── pricing.html # Pricing / Tariffs page
 - ├── contact.html # Contact page
-- ├── login.html # Login page
 - │
 - ├── styles.css # Global stylesheet
 - ├── script.js # Main JavaScript file
@@ -48,10 +47,12 @@ mjamaa-bank/
 - 📊 **Live Currency Ticker** — Infinite scrolling bar showing real-time KES buy/sell rates against major world currencies
 - 📱 **Fully Responsive** — Mobile-first design with hamburger menu and adaptive layouts
 - 🎨 **Custom Design System** — CSS variables for consistent color, spacing, and typography across all pages
-- 🔠 **DM Sans Typography** — Clean, tight grotesque font with intentional negative letter-spacing for a premium feel
 - 🧭 **Fixed Navigation** — Sticky top nav with active page indicator and smooth hover transitions
 - 🌍 **Multi-page Architecture** — Separate HTML pages for each section of the site
 - ♿ **Accessibility** — ARIA labels on interactive elements, keyboard navigable slideshow, semantic HTML throughout
+- 🚧 **Demo Banner** — Prominent, dismissible banner on every page clarifying that Mjamaa Bank is a fictional demo site
+- 🔍 **SEO Optimized** — Per-page meta descriptions, Open Graph, Twitter Card, and WhatsApp preview tags with a branded social image
+- 🗺️ **Sitemap** — Complete XML sitemap for all pages to aid search engine indexing
 
 ---
 
@@ -128,9 +129,6 @@ font-weight: 300;
 ### 📞 Contact (`contact.html`)
 - Branch locations
 - Contact form
-
-### 🔐 Login (`login.html`)
-- Internet banking login
 
 ---
 
