@@ -3,26 +3,36 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mjamaa-bank.vercel.app/</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mjamaa-bank.vercel.app/og-image.png</image:loc>
+      <image:title>Mjamaa Bank — Demo Bank</image:title>
+      <image:caption>Mjamaa Bank is a fictional demo commercial bank in Kenya.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://mjamaa-bank.vercel.app/about-us.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mjamaa-bank.vercel.app/pricing.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mjamaa-bank.vercel.app/careers.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mjamaa-bank.vercel.app/contact.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
