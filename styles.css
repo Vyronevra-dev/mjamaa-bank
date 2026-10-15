@@ -45,60 +45,61 @@ html {
 body {
     background-color: var(--light-background);
     color: var(--light-text-primary);
-    padding-top: var(--banner-height);
+    padding-top: calc(60px + 36px);
 }
 
-/* ===== Demo Banner ===== */
-.demo-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* ===== Demo Ticker (above footer) ===== */
+.demo-ticker-wrap {
     width: 100%;
-    height: var(--banner-height);
     background: linear-gradient(90deg, #F59E0B, #D97802);
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
     font-family: 'DM Sans', sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
     letter-spacing: 0.01em;
-    z-index: 11000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
-.demo-banner a {
+.demo-ticker-wrap a {
     color: #fff;
     text-decoration: underline;
     font-weight: 600;
 }
 
-.demo-banner .demo-banner-close {
-    position: absolute;
-    right: 1rem;
-    background: rgba(255, 255, 255, 0.25);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    width: 24px;
-    height: 24px;
+.demo-ticker {
+    display: flex;
+    gap: 4rem;
+    white-space: nowrap;
+    animation: demo-ticker-scroll 60s linear infinite;
+}
+
+.demo-ticker span {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    cursor: pointer;
-    line-height: 1;
 }
 
-.demo-banner .demo-banner-close:hover {
-    background: rgba(255, 255, 255, 0.4);
+.demo-ticker span::before {
+    content: '●';
+    margin-right: 1rem;
+    opacity: 0.5;
 }
 
-/* Hide banner from print */
+@keyframes demo-ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.demo-ticker:hover {
+    animation-play-state: paused;
+}
+
+/* Hide from print */
 @media print {
-    .demo-banner {
+    .demo-ticker-wrap {
         display: none;
     }
 }
@@ -112,7 +113,7 @@ body {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    top: var(--banner-height);
+    top: 0;
     z-index: 9999;
 }
 
@@ -184,11 +185,11 @@ body {
     flex-direction: column;
     background-color: var(--light-card);
     position: fixed;
-    top: var(--banner-height);
+    top: 60px;
     right: 0;
     width: 40%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-    height: calc(100vh - var(--banner-height));
+    height: calc(100vh - 60px);
     padding: 50px 0;
     z-index: 10000;
 }
@@ -225,7 +226,7 @@ body {
 
 .ticker-wrap {
     position: fixed;
-    top: calc(var(--banner-height) + 60px);
+    top: 60px;
     left: 0;
     width: 100%;
     background-color: var(--light-btn-primary);
@@ -259,7 +260,7 @@ body {
 
 @keyframes ticker-scroll {
     0% {
-        transfrom: translateX(0);
+        transform: translateX(0);
     }
 
     100% {
@@ -288,7 +289,7 @@ body {
 
 @media (max-width: 750px) {
     .ticker-wrap {
-        top: calc(var(--banner-height) + 98px);
+        top: 60px;
     }
 
     .mobile-link {
@@ -331,7 +332,7 @@ body {
 
 @media (max-width: 480px) {
     .ticker-wrap {
-        top: calc(var(--banner-height) + 96px);
+        top: 58px;
     }
 
     .left h1 {

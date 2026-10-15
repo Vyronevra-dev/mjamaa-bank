@@ -17,21 +17,6 @@ overlay.addEventListener('click', () => {
     overlay.classList.remove('open');
 })
 
-/* ——— Demo Banner Dismissal ——— */
-const demoBanner = document.querySelector('.demo-banner');
-const demoBannerClose = document.querySelector('.demo-banner-close');
-
-if (demoBanner && demoBannerClose) {
-    if (sessionStorage.getItem('demoBannerDismissed') === 'true') {
-        demoBanner.style.display = 'none';
-    }
-
-    demoBannerClose.addEventListener('click', () => {
-        demoBanner.style.display = 'none';
-        sessionStorage.setItem('demoBannerDismissed', 'true');
-    });
-}
-
 /* ——— Hero Slideshow ——— */
 const slides = document.querySelectorAll('.slide');
 const dots   = document.querySelectorAll('.dot');
